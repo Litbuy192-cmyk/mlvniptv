@@ -3,63 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TON IPTV PERSONNEL - LDC + UFC Gratuit 2026</title>
+    <title>TON IPTV PERSONNEL - LDC + UFC 2026</title>
     <style>
         body { background: linear-gradient(#000, #111); color: #0f0; font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 20px; }
         h1 { color: #00ff00; text-shadow: 0 0 20px #0f0; font-size: 2.8em; }
-        .section { margin: 30px 0; }
+        .section { margin: 35px 0; }
         .menu { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 20px 0; }
-        button { background: #0f0; color: #000; padding: 14px 28px; margin: 6px; border: none; font-size: 17px; cursor: pointer; border-radius: 6px; font-weight: bold; }
-        button:hover { background: #ff0; transform: scale(1.08); }
-        iframe { width: 100%; max-width: 1300px; height: 78vh; border: 5px solid #0f0; box-shadow: 0 0 35px #0f0; border-radius: 10px; }
-        .warning { color: #ff0; font-size: 14px; margin: 10px; }
+        button { background: #0f0; color: #000; padding: 15px 30px; margin: 8px; border: none; font-size: 17px; cursor: pointer; border-radius: 8px; font-weight: bold; }
+        button:hover { background: #ff0; transform: scale(1.1); }
+        iframe { width: 100%; max-width: 1350px; height: 80vh; border: 5px solid #0f0; box-shadow: 0 0 40px #0f0; border-radius: 12px; }
+        .info { color: #ff0; font-size: 15px; margin: 15px; line-height: 1.5; }
+        .backup { margin-top: 40px; font-size: 16px; }
+        .backup a { color: #0f0; margin: 0 12px; text-decoration: none; }
+        .backup a:hover { color: #ff0; }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🚀 TON IPTV PERSONNEL GRATUIT 2026</h1>
-        <p style="color:#0f0; font-size:1.2em;">LDC • UFC • Tous les matchs et combats en direct</p>
+        <p style="color:#0f0; font-size:1.3em;">LDC • UFC • Tous les matchs et combats en direct</p>
 
-        <!-- LDC -->
         <div class="section">
             <h2>⚽ LIGUE DES CHAMPIONS (LDC)</h2>
             <div class="menu">
-                <button onclick="changeStream('https://sport-surge.to')">Sport-Surge LDC</button>
                 <button onclick="changeStream('https://totalsportek.pro')">TotalSportek LDC</button>
                 <button onclick="changeStream('https://www.footybite.to')">Footybite LDC</button>
                 <button onclick="changeStream('https://hesgoal.tv')">Hesgoal LDC</button>
-                <button onclick="changeStream('https://methstreams.com')">Methstreams Champions</button>
+                <button onclick="openNewTab('https://sport-surge.to')">Sport-Surge LDC (nouvel onglet)</button>
+                <button onclick="openNewTab('https://methstreams.com')">Methstreams Champions</button>
             </div>
         </div>
 
-        <!-- UFC -->
         <div class="section">
-            <h2>🥊 UFC - Tous les combats</h2>
+            <h2>🥊 UFC - Tous les combats PPV</h2>
             <div class="menu">
-                <button onclick="changeStream('https://weakstreams.com')">Weakstreams UFC</button>
-                <button onclick="changeStream('https://sport-surge.to')">Sport-Surge UFC</button>
-                <button onclick="changeStream('https://methstreams.com')">Methstreams UFC</button>
                 <button onclick="changeStream('https://buffstreams.tv')">Buffstreams UFC</button>
+                <button onclick="changeStream('https://www.footybite.to')">Footybite UFC</button>
+                <button onclick="openNewTab('https://sport-surge.to')">Sport-Surge UFC (nouvel onglet)</button>
+                <button onclick="openNewTab('https://methstreams.com')">Methstreams UFC</button>
             </div>
         </div>
 
         <h2>Player Principal</h2>
-        <p class="warning">Si un stream ne marche pas → clique sur un autre bouton ou attends 10 secondes et réessaie (les sites bougent souvent)</p>
-        <iframe id="player" src="https://sport-surge.to" allowfullscreen></iframe>
+        <p class="info">
+            ⚠️ Si le player ne charge pas ou montre une erreur :<br>
+            • Clique sur un autre bouton<br>
+            • Essaie le bouton "nouvel onglet" (ça contourne beaucoup de blocages)<br>
+            • Attends 10-15 secondes et réessaie (les streams se rechargent souvent)
+        </p>
+        <iframe id="player" src="https://totalsportek.pro" allowfullscreen></iframe>
 
-        <div style="margin-top:40px;">
-            <strong>Backups rapides :</strong><br><br>
-            <a href="https://sport-surge.to" target="_blank" style="color:#0f0;">Sport-Surge</a> | 
-            <a href="https://totalsportek.pro" target="_blank" style="color:#0f0;">TotalSportek</a> | 
-            <a href="https://www.footybite.to" target="_blank" style="color:#0f0;">Footybite</a> | 
-            <a href="https://weakstreams.com" target="_blank" style="color:#0f0;">Weakstreams</a> | 
-            <a href="https://methstreams.com" target="_blank" style="color:#0f0;">Methstreams</a>
+        <div class="backup">
+            <strong>Liens backups directs (ouvre dans nouvel onglet) :</strong><br><br>
+            <a href="https://totalsportek.pro" target="_blank">TotalSportek</a> |
+            <a href="https://www.footybite.to" target="_blank">Footybite</a> |
+            <a href="https://hesgoal.tv" target="_blank">Hesgoal</a> |
+            <a href="https://buffstreams.tv" target="_blank">Buffstreams</a> |
+            <a href="https://sport-surge.to" target="_blank">Sport-Surge</a> |
+            <a href="https://methstreams.com" target="_blank">Methstreams</a>
         </div>
     </div>
 
     <script>
         function changeStream(url) {
             document.getElementById('player').src = url;
+        }
+        function openNewTab(url) {
+            window.open(url, '_blank');
         }
     </script>
 </body>
